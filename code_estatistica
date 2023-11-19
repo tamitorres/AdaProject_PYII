@@ -1,1 +1,38 @@
+#Máximo e mínima de salário#
+def salario_max_min (dados, salario, maximo=True):
+    if not dados:
+      return ("Não há dados a serem exibidos")
+    maior_salário = [(candidato ["nome"], salário ["salário"] for candidato in dados]:
+    max_salário = max( maior_salario, key=lambda x: x[1]) if maximo
+    else
+      min( maior_salario, key=lambda x: x[1])
+    return max_salário
 
+#quantidade de pessoas pelo sexo#
+def pessoas_sexo_F (dados, sexo):
+  sexo_F = list(filter(lambda x: x["Sexo"] == ("F"))
+  return sexo_F
+  quantidade_F = len(sexo_F)
+
+def pessoas_sexo_M (dados, sexo):
+  sexo_M = list(filter(lambda x: x["Sexo"] == ("M"))
+  return sexo_M
+  quantidade_M = len(sexo_M)
+
+#média de altura
+def calculo_altura (dados, altura):
+    lista_altura_media = list(filter(lambda x: x['altura'] == altura_media, dados))
+    if not lista_altura_media 
+        reutrn None
+    altura_soma = sum(lista_altura)
+    media_altura = altura_soma/ len(lista_altura_media)
+        return media_altura
+
+#media de salário
+def calculo_salario (dados, salario):
+    lista_salario_media = list(filter(lambda x: x['salario'] == salario_media, dados))
+    if not lista_salario_media 
+        reutrn None
+    salario_soma = sum(lista_salario)
+    media_salario = salario_soma/ len(lista_salario_media)
+        return media_salario
